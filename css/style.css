@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Yandex Sans Display';
+    src: url('../fonts/YandexSansDisplay-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Yandex Sans Text';
+    src: url("../fonts/YandexSansText-Regular.woff2") format('woff2');
+}
 html{
     box-sizing: border-box;
 }
@@ -6,4 +15,11 @@ html{
 *::after{
     box-sizing: inherit;
 }
-
+body{
+    color: #FFF;
+    font-family: Yandex Sans Text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
