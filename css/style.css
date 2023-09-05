@@ -45,6 +45,14 @@ body{
     border-radius: 12px;
     transition: background-color .5s ease;
 }
+.title{
+    color: #FFF;
+    font-family: Yandex Sans Display;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 130%;
+    margin-bottom: 64px;
+}
 .button--yellow{
     background-color: #FFD21E;
     font-size: 19px;
@@ -69,6 +77,9 @@ body{
 .header__btn:hover{
     background-color: #c4c4c4;
 }
+.analytics{
+    margin-bottom: 115px;
+}
 .analytics__inner{
     display: flex;
     justify-content: space-between;
@@ -88,4 +99,56 @@ body{
     color: #9C9C9C;
     margin-bottom: 40px;
     max-width: 439px;
+}
+.advantages{
+    background-color: #191E28;
+    padding-top: 80px;
+    padding-bottom: 160px;
+}
+
+.advantages__slider{
+    padding-bottom: 70px;
+    position: relative;
+    overflow: hidden;
+}
+.advantages__slide{
+    width: 425px!important;
+    border-radius: 12px;
+    border: 1px solid #131720;
+    background: #131720;
+    position: relative;
+    min-height: 179px;
+    padding: 24px;
+}
+.swiper-wrapper{
+    box-sizing: border-box;
+    margin-left: 30px;
+}
+.swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #FFF;
+    opacity: 1;
+    background: none;
+    border: 1px solid #fff;
+}
+.swiper-pagination-bullet-active{
+    background-color: #BCC7D8;
+}
+.advantages__img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.advantages__title{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 135%;
+    margin-bottom: 16px;
+}
+.advantages__text{
+    max-width: 341px;
 }
