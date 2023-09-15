@@ -15,3 +15,18 @@ const reportsSlider = new Swiper('.reports__slider', {
         prevEl: ".reports__slider-prev",
     },
 });
+
+const accordion = document.querySelector('.accordion');
+const accordionItems = accordion.querySelectorAll('.accordion__btn');
+
+accordionItems.forEach.call(accordionItems, function(accordionItem) {
+    accordionItem.addEventListener('click', function () {
+        accordionItem.parentNode.classList.toggle('active')
+        // currentItem.classList.toggle('accordeon__item--visible');
+        // if (currentText.classList.contains('accordeon__text--visible')) {
+        //     currentText.style.maxHeight = currentText.scrollHeight + 'px';
+        // } else {
+        //     currentText.style.maxHeight = null;
+        // }
+    })
+});

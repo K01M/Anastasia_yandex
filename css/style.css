@@ -230,3 +230,87 @@ body{
 .reports__slider-next{
     right: 0;
 }
+.work{
+    padding: 80px 0 160px;
+    background-color: #191E28;
+}
+.work__content{
+    border-radius: 12px;
+    padding: 10px 10px 10px 70px;
+    background-color: #131720;
+    display: flex;
+    justify-content: space-between;
+}
+.work__content-img{
+
+}
+.work__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    background: url(/images/work_light.png);
+    background-position: center;
+    background-size: cover;
+}
+.accordion{
+    counter-reset: number;
+    width: 574px;
+    padding: 95px 0;
+}
+.accordion__item{
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 16px 16px 51px;
+    border-radius: 12px;
+    background: #191E28;
+    backdrop-filter: blur(7.5px);
+}
+.accordion__item::before{
+    counter-increment: number;
+    content: '' counter(number);
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    top: 20px;
+    left: 16px;
+    background-color: #131720;
+    border-radius: 50%;
+    color: #6E82AA;
+    text-align: center;
+    font-size: 13px;
+    line-height: 135%;
+    padding-top: 1px;
+
+}
+.accordion__item-text{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 135%;
+}
+.accordion__box{
+    max-height: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.active > .accordion__box{
+    max-height: 159px;
+    opacity: 1;
+    width: 100%;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.accordion__btn{
+    background: none;
+    border: none;
+    transition: all 0.5s ease;
+}
+.active > .accordion__btn{
+    transform: rotate(180deg);
+}
